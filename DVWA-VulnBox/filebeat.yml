@@ -1,7 +1,7 @@
 filebeat.inputs:
   - type: log
     paths:
-      - /path/to/honeypot/logs/*.log
+      - /var/log/*.log
 
 output.logstash:
   hosts: ["logstash_ip:5044"]
